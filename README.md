@@ -1,11 +1,11 @@
 # Sentiment Analysis on App Store Reviews
 
-Welcome to the Sentiment Analysis on App Store Reviews project repository. This project aims to classify Google Play Store reviews into positive, neutral, and negative sentiments using a BERT model. Below is an overview of the project, including features, code snippets, and instructions for running the code.
+Welcome to the Sentiment Analysis on App Store Reviews project repository. This project aims to classify App Store reviews into positive, neutral, and negative sentiments using a BERT model. Below is an overview of the project, including features, code snippets, and instructions for running the code.
 
 ---
 
 <div align="center">
-  <img src="./google_play_store_reviews.jpeg" alt="Google Play Store Reviews" style="border:none;">
+  <img src="./Sentiment-Analysis.jpeg" alt="App Store Reviews" style="border:none;">
 </div>
 
 ---
@@ -27,9 +27,9 @@ This project focuses on analyzing and classifying App Store Reviews by leveragin
 
 ## Contents
 
-- `sentiment_analysis.ipynb`: Jupyter notebook containing the code implementation and analysis.
+- `Sentiment_Analysis.ipynb`: Jupyter notebook containing the code implementation and analysis.
 - `README.md`: This file, providing an overview of the project.
-- `reviews.csv`: Dataset used for training and testing the models.
+- `review.csv`: Dataset used for training and testing the models.
 
 ---
 
@@ -44,7 +44,7 @@ This project focuses on analyzing and classifying App Store Reviews by leveragin
    pip install -r requirements.txt
 3. **Run the Jupyter Notebook**:
    ```bash
-   sentiment_analysis.ipynb
+   Sentiment_Analysis.ipynb
 
 ---
 
@@ -52,45 +52,45 @@ This project focuses on analyzing and classifying App Store Reviews by leveragin
 ### Data Cleaning
 - Identified and handled missing values in relevant columns.
 ### Class Distribution
-- Positive: Scores 4-5
-- Neutral: Score 3
-- Negative: Scores 1-2
+- **Positive**: Scores 4-5
+- **Neutral**: Score 3
+- **Negative**: Scores 1-2
 ### Tokenization
-- `Model Used`: BERT (bert-base-cased)
-- `Tokenizer`: Utilized BERT's tokenizer
-- `Sequence Length`: Chose a maximum length of 160 tokens
+- **Model Used**: BERT (bert-base-cased)
+- **Tokenizer**: Utilized BERT's tokenizer
+- **Sequence Length**: Chose a maximum length of 160 tokens
 
 ---
 
 ## Dataset Preparation
-- `Custom Dataset Class`: Created a GPReviewDataset class for handling the reviews and their sentiments.
-- `Data Split`: Split the dataset into training (80%), validation (10%), and test (10%) sets.
-- `DataLoader`: Used PyTorch DataLoader for batch processing.
+- **Custom Dataset Class**: Created a GPReviewDataset class for handling the reviews and their sentiments.
+- **Data Split**: Split the dataset into training (80%), validation (10%), and test (10%) sets.
+- **DataLoader**: Used PyTorch DataLoader for batch processing.
 
 ---
 
 ## Model Training
-- `Model Architecture`: Built a sentiment classifier on top of BERT with a dropout layer for regularization.
-- `Optimizer`: AdamW optimizer.
-- `Scheduler`: Linear scheduler with no warmup.
-- `Loss Function`: CrossEntropyLoss.
+- **Model Architecture**: Built a sentiment classifier on top of BERT with a dropout layer for regularization.
+- **Optimizer**: AdamW optimizer.
+- **Scheduler**: Linear scheduler with no warmup.
+- **Loss Function**: CrossEntropyLoss.
 ## Training Loop
-- `Epochs`: 1
-- `Training Metrics`: Monitored training and validation accuracy and loss.
-- `Model Saving`: Saved the best model based on validation accuracy.
+- **Epochs**: 1
+- **Training Metrics**: Monitored training and validation accuracy and loss.
+- **Model Saving**: Saved the best model based on validation accuracy.
 
 ---
 
 ## Model Evaluation
-- `Test Accuracy`: Achieved a test accuracy of 75.12%.
-- `Classification Report`: Evaluated precision, recall, and F1-score for each sentiment class.
-- `Confusion Matrix`: Visualized model performance using a confusion matrix.
+- **Test Accuracy**: Achieved a test accuracy of 75.12%.
+- **Classification Report**: Evaluated precision, recall, and F1-score for each sentiment class.
+- **Confusion Matrix**: Visualized model performance using a confusion matrix.
 
 ---
 
 ## Key Insights
-- `Accuracy`: The model demonstrated high accuracy in classifying positive reviews, moderate accuracy for negative reviews, and struggled with neutral reviews.
-- `Example Prediction`: For the review "I love completing my todos! Best app ever!!!", the model predicted a positive sentiment.
+- **Accuracy**: The model demonstrated high accuracy in classifying positive reviews, moderate accuracy for negative reviews, and struggled with neutral reviews.
+- **Example Prediction**: For the review "I love completing my todos! Best app ever!!!", the model predicted a positive sentiment.
 
 ---
 
@@ -111,5 +111,4 @@ This project focuses on analyzing and classifying App Store Reviews by leveragin
 ## Thank you for visiting! If you find this project useful, please consider starring the repository. Happy coding!
 
 ---
-   
    
