@@ -37,7 +37,7 @@ This project focuses on analyzing and classifying App Store Reviews by leveragin
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/Sentiment-Analysis-on-App-Store-Reviews.git
+   git clone https://github.com/MrMaxMind/Sentiment-Analysis-on-App-Store-Reviews.git
    cd Sentiment-Analysis-on-App-Store-Reviews
 2. **Install the required packages**:
    ```bash
